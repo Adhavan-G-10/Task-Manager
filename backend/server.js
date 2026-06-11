@@ -11,7 +11,14 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['https://task-manager-plum-iota.vercel.app', 'http://localhost:5173'], // Allowed origins
+  origin: function (origin, callback) {
+    // Allow localhost and any vercel.app domain
+    if (!origin || origin.startsWith('http://localhost') || origin.endsWith('.vercel.app')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 app.use(express.json());
