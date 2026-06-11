@@ -34,7 +34,7 @@ export default function Register() {
           <div className="auth-icon-container">
             <CheckCircle className="auth-icon" />
           </div>
-          <h2 className="auth-title">Create Account</h2>
+          <h2 className="auth-title gradient-title">Create Account</h2>
           <p className="auth-subtitle">Start managing your tasks today</p>
         </div>
 

@@ -57,7 +57,7 @@ export default function Dashboard() {
       <header className="dashboard-header">
         <div className="dashboard-header-inner">
           <div className="dashboard-logo">
-            <h1 className="logo-text">Task Manager</h1>
+            <h1 className="logo-text gradient-title">Task Manager</h1>
           </div>
           <div className="header-actions">
             <span className="user-greeting">

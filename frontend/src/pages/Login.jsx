@@ -33,7 +33,7 @@ export default function Login() {
           <div className="auth-icon-container">
             <CheckCircle className="auth-icon" />
           </div>
-          <h2 className="auth-title">Welcome Back</h2>
+          <h2 className="auth-title gradient-title">Welcome Back</h2>
           <p className="auth-subtitle">Manage your tasks efficiently</p>
         </div>
 
