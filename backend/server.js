@@ -10,7 +10,10 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ['https://task-manager-plum-iota.vercel.app', 'http://localhost:5173'], // Allowed origins
+  credentials: true
+}));
 app.use(express.json());
 
 // Database Connection
